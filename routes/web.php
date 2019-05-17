@@ -18,6 +18,13 @@ Route::group(['middleware' => 'auth'], function () {
     // wish list
     Route::get('your_wishlist', 'UserController@wishlists')->name('your-wishlist');
     Route::post('add_to_wishlist', 'UserController@make_wish')->name('add-to-wishlist');
+
+    Route::get('/sendMessage', 'MessageController@test');
 });
 
 Route::get('/', 'HomeController@index')->name('home');
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});

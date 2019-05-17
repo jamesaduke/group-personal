@@ -93,4 +93,5 @@
             </div>
         </div>
     </div>
+    <a href="/sendMessage">Test</a>
 @endsection

@@ -10,7 +10,7 @@
     // use the service
     $result  = $sms->send([
             'to' => '+254720655526',
-            
+
         ])
 
 ?>
