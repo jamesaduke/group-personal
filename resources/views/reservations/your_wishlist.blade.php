@@ -1,7 +1,5 @@
 @extends('layouts.app')
 
-@section('title')Your Trips @endsection
-
 @section('content')
 
     <div class="row">

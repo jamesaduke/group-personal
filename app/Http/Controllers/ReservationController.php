@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Reservation;
+use App\Room;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -13,18 +14,16 @@ class ReservationController extends Controller
         Auth::user()->reservations()->create([
             'room_id' => $request->room_id,
             'phone_number' => $request->phone_number
-            // 'end_date' => $request->end_date,
-            // 'price' => $request->price,
-            // 'total' => $request->total
         ]);
 
+        return redirect('/sendMessage/'.$request->phone_number);
+        return $request;
         $notification = array(
             'message' => 'Your Reservation created',
             'alert-type' => 'success'
         );
-
-        return redirect()->route('rooms.show', $request->room_id)->with($notification);
     }
+
 
     public function your_reservations()
     {

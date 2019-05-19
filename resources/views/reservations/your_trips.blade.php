@@ -1,6 +1,5 @@
 @extends('layouts.app')
 
-@section('title')Your Trips @endsection
 
 @section('content')
 
@@ -11,16 +10,12 @@
                 <li class="sidebar-item">
                     <a href="{{ route('your-reservations') }}">Your Reservations</a>
                 </li>
-                <li class="sidebar-item">
-                    <a href="{{ route('your-trips') }}" class=" sidebar-link active">Your Trips</a>
-                </li>
+                
             </ul>
         </div>
         <div class="col-md-9">
             <div class="panel panel-default">
-                <div class="panel-heading">
-                    Your Trips
-                </div>
+                
                 <div class="panel-body">
                     @foreach($trips as $trip)
                         <div class="row">

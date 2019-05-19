@@ -67,12 +67,8 @@
                     <li><a href="{{ route('login') }}">Login</a></li>
                     <li><a href="{{ route('register') }}">Register</a></li>
                     @else
-                        <li>
-                            <a href="#"><i class="fa fa-envelope-o"></i> Messages</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-home fa-lg"></i> Become a Host</a>
-                        </li>
+                                               </li>
+                        
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
                                aria-expanded="false" aria-haspopup="true" v-pre>
@@ -89,9 +85,6 @@
                                 </li>
                                 <li>
                                     <a href="{{ route('your-reservations') }}">Your Reservations</a>
-                                </li>
-                                <li>
-                                    <a href="{{ route('your-wishlist') }}">Wish List</a>
                                 </li>
                                 <li>
                                     <a href="{{ route('profile') }}">Edit Profile</a>

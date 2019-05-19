@@ -131,7 +131,7 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label>Nightly Price</label>
+                            <label>Monthly Price</label>
                             <div class="input-group">
                                 <div class="input-group-addon">$</div>
                                 <input type="number" min="10" name="price" placeholder="eg. $100" class="form-control">

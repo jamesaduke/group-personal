@@ -11,7 +11,6 @@
                 <li class="sidebar-item">
                     <a href="{{ route('your-reservations') }}" class=" sidebar-link active">Your Reservations</a>
                 </li>
-                <li class="sidebar-item"><a href="{{ route('your-trips') }}">Your Trips</a></li>
             </ul>
         </div>
         <div class="col-md-9">
@@ -25,10 +24,10 @@
                         @foreach($room->reservations as $reservation)
                             <div class="row">
                                 <div class="col-md-2">
-                                    {{ \Carbon\Carbon::parse($reservation->start_date)->diffForHumans() }}
+                                    {{ \Carbon\Carbon::parse($reservation->phone_number)->diffForHumans() }}
                                 </div>
                                 <div class="col-md-6">
-                                    <img class="img-responsive" style="width: 150px" src="{{ asset("images/rooms/".$reservation->room->photos[0]->name) }}">
+                                    <img class="img-responsive" style="width: 150px" src="{{ asset("images/rooms/".$reservation->room->listing_name) }}">
                                 </div>
                                 <div class="col-md-2">
                                     <a href="">

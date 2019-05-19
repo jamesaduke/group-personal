@@ -3,7 +3,7 @@
     <div class="row">
         <div class="col-md-12 price_tag">
             <span>{{ $room->price }}</span>
-            <span class="pull-right">Per Night</span>
+            <span class="pull-right">Per Month</span>
         </div>
     </div>
     <div class="row">

@@ -6,7 +6,7 @@
     <div class="container">
         <div class="row">
             <form action="">
-                <div class="row">
+                {{-- <div class="row">
                     <div class="col-md-6">
                         <input type="text" placeholder="Where are you going?" class="form-control" name="search">
                     </div>
@@ -19,25 +19,24 @@
                     <div class="col-md-2">
                         <input type="submit" class="btn btn-primary" value="Search">
                     </div>
-                </div>
+                </div> --}}
             </form>
 
             <hr>
 
-            <div class="text-center">
-                <h2>Just for the weekend</h2>
-                <p>Discover new, inspiring places close to home.</p>
-            </div>
 
             <br>
-
+            <div class="text-center">
+                <h2>Find a good apartment easily</h2>
+                <p>Easily list and group apartments in the Meru County and its environs</p>
+            </div>
             <div class="row">
                 <div class="col-md-4 col-sm-12">
                     <a href="#">
                         <div class="discovery-card" style="background-image: url({{ asset('/images/New_York.jpeg') }})">
                             <div class="va-container">
                                 <div class="va-middle text-center">
-                                    <h2><strong>New York</strong></h2>
+                                    <h2><strong>Meru</strong></h2>
                                 </div>
                             </div>
                         </div>
@@ -48,7 +47,7 @@
                         <div class="discovery-card" style="background-image: url({{ asset('/images/San_Francisco.jpeg') }})">
                             <div class="va-container">
                                 <div class="va-middle text-center">
-                                    <h2><strong>San Francisco</strong></h2>
+                                    <h2><strong>Nkubu</strong></h2>
                                 </div>
                             </div>
                         </div>
@@ -59,19 +58,20 @@
                         <div class="discovery-card" style="background-image: url({{ asset('/images/Chicago.jpeg') }})">
                             <div class="va-container">
                                 <div class="va-middle text-center">
-                                    <h2><strong>Chicago</strong></h2>
+                                    <h2><strong>Chuka</strong></h2>
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
 
+                <div class="text-center">
+                    <h2>Listings available</h2>
+                </div>
+
                 <br>
 
-                <div class="text-center">
-                    <h2>Explore the world</h2>
-                    <p>See where people are travelling, all around the world.</p>
-                </div>
+                
 
                 <br>
 

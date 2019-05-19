@@ -5,7 +5,7 @@ use App\Messages\AfricasTalkingGateway;
 
 
 class MessageController extends Controller{
-    public function test(){
+    public function test($recipient){
         // Set your app credentials
         $username   = "sandbox";
         $apiKey     = "8ca8f089c985233ce4f8f248892073e1f02e4069c6012edf96b62d4ce2fd18a8";
@@ -14,11 +14,11 @@ class MessageController extends Controller{
 
 
         // Set the numbers you want to send to in international format
-        $recipients = "+254720655526";
+        $recipients = "+254".$recipient;
 
         // Set your message
 
-        $message    = "You have booked an Apartment. Please contact us on this number for steps forward 0771660006";
+        $message    = "You have booked an Apartment. Our team will schedule for you a tour as soon as possible";
 
         try {
             // Thats it, hit send and we'll take care of the rest
@@ -27,10 +27,16 @@ class MessageController extends Controller{
 ////            $update->save();
 
             //print_r($result);
-            return redirect('/rooms')->with('success', 'Update successfully sent');
+            $notification = array(
+            'message' => 'Your Reservation created',
+            'alert-type' => 'success'
+        );
+            return redirect('/your_reservations')->with($notification);
         } catch (Exception $e) {
             echo "Error: ".$e->getMessage();
         }
     }
 
 }
+
+?>

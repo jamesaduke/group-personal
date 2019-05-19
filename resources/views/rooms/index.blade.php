@@ -8,8 +8,7 @@
         <div class="col-md-3">
             <ul class="sidebar-list">
                 <li class="sidebar-item active"><a href="{{ route('rooms') }}">Your Listing</a></li>
-                <li class="sidebar-item"><a href="{{ route('your-reservations') }}">Your Reservations</a></li>
-                <li class="sidebar-item"><a href="{{ route('your-trips') }}">Your Trips</a></li>
+                <li class="sidebar-item"><a href="{{ route('your-reservations') }}">Your bookings</a></li>
             </ul>
         </div>
         <div class="col-md-9">
@@ -28,7 +27,7 @@
                                 <h4><a href="/rooms/{{$room->id}}">{{ $room->listing_name }}</a></h4>
                             </div>
                             <div class="col-md-3 right">
-                            <a href="/rooms/{{$room->id}}/edit" class="btn btn-primary">Edit</a>
+                            {{-- <a href="/rooms/{{$room->id}}/edit" class="btn btn-primary">Edit</a> --}}
                             </div>
                         </div>
                         <hr>
